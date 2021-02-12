@@ -1,7 +1,14 @@
 site_name: Nanobox docs
+
 nav:
   - Home: index.md
   - Getting started: api-docs
+  - Playground: api-docs/nano-api
+
 theme: materia
+
 extra_css:
   - css/extra.css
+  -
+plugins:
+  - render_swagger
