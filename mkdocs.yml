@@ -1,0 +1,7 @@
+site_name: Nanobox docs
+nav:
+  - Home: index.md
+  - Getting started: api-docs
+theme: materia
+extra_css:
+  - css/extra.css
