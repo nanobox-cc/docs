@@ -2,6 +2,14 @@
     background-color:  #4A90E2 !important;
 }
 
+/** openapi plugin fixes */
+.information-container.wrapper {
+    display: none;
+}
+.servers {
+    margin-top: 1rem;
+}
+
 #operations-tag-Node_RPCs {
     display: none;
 }
@@ -24,3 +32,4 @@
 #operations-tag-debug  + div  {
     display: none;
 }
+
