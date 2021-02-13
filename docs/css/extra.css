@@ -1,6 +1,9 @@
 .bg-primary {
     background-color:  #4A90E2 !important;
 }
+header.md-header {
+    background-color:  #4A90E2
+}
 
 /** openapi plugin fixes */
 .information-container.wrapper {
