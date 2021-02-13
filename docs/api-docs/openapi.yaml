@@ -9,6 +9,8 @@ servers:
 security:
   - BasicAuth: [ ]
 tags:
+  - name: Nanobox API
+    description: Commands available when interacting with the Nanobox API
   - name: Node RPCs
     description: For interacting with the node and ledger.
     externalDocs:
@@ -78,6 +80,7 @@ paths:
   /#account_history:
     post:
       tags:
+        - Nanobox API
         - Node RPCs
       operationId: account_history
       description: |
@@ -97,6 +100,7 @@ paths:
   /#account_info:
     post:
       tags:
+        - Nanobox API
         - Node RPCs
       operationId: account_info
       description: |
@@ -576,6 +580,7 @@ paths:
   /#work_generate:
     post:
       tags:
+        - Nanobox API
         - Node RPCs
       operationId: work_generate
       description: |
@@ -657,6 +662,7 @@ paths:
   /#pending:
     post:
       tags:
+        - Nanobox API
         - Node RPCs
       operationId: pending
       description: |
@@ -682,6 +688,7 @@ paths:
   /#process:
     post:
       tags:
+        - Nanobox API
         - Node RPCs
       operationId: process
       description: Publish block to the network
