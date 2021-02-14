@@ -1,17 +1,21 @@
 site_name: Nanobox docs
+site_url: https://nanobox.cc/
+repo_url: https://github.com/nanobox-cc/docs
 
 nav:
   - Home: index.md
-  - Getting started: api-docs
+  - Getting started: /api-docs
   - Clients:
-      - Node.js: api-docs/js
-  - Browser playground: api-docs/nano-api
+      - node.js:
+        - introduction: /api-docs/js
+  - Browser playground: /api-docs/nano-api
 
-theme: material
-
+theme:
+  name: material
+  features:
+    - navigation.instant
 extra_css:
   - css/extra.css
-  -
 plugins:
   - render_swagger
 
@@ -20,3 +24,7 @@ markdown_extensions:
   - pymdownx.superfences
   - toc:
         permalink: true
+
+google_analytics:
+  - G-DEF3NZ31S5
+  - auto
