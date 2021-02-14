@@ -14,6 +14,9 @@ getting info from the network and moving Nano from one account to the other.
 In order to get  API token access to the closed beta email us at contact@nanobox.cc or head over to the
 [main page](https://nanobox.cc) for more information.
 
+If you want to play around with the network and don't have any requirements for uptime/PoW, there's an excellent
+list of free to use Node APIs at [somenano.com](https://publicnodes.somenano.com/).
+
 ## Ready to start building?
 
 Head over to the API documentation introduction [here](/api-docs)
