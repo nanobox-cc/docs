@@ -1,1 +1,1 @@
-# Docs for onboarding with Nanobox!
+# Docs for onboarding with Nanobox
