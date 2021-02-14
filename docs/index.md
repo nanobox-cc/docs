@@ -1,6 +1,6 @@
 # Welcome
 
-This is the documentation hub for [Nanobox](https://nanobox.cc)! Currently work in progress on how to interact with the API. 
+This is the documentation hub for [Nanobox](https://nanobox.cc). It's a living document on how to interact with the API. 
 [Open an issue](https://github.com/nanobox-cc/docs/issues) if you have any questions or feedback!
 
 Make sure to check out the official documentation at [docs.nano.org](https://docs.nano.org/). The official documentation covers 
