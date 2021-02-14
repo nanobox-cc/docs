@@ -6,7 +6,7 @@ This is the documentation hub for [Nanobox](https://nanobox.cc). It's a living d
 Make sure to check out the official documentation at [docs.nano.org](https://docs.nano.org/). The official documentation covers 
 everything around the base protocol, details when interacting with the node and much more!
 
-The Nanobox API documentation aims to document the most practical use cases for when integrating with the node. This being
+The Nanobox API documentation aims to document the most practical use cases for integrating with the Nano network. This being
 getting info from the network and moving Nano from one account to the other.
 
 ## Getting access
