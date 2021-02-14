@@ -19,6 +19,6 @@ The introduction will cover the following topics:
 2. Fetching account information for a given Nano address
 3. Performing a transaction
 
-### Clients
+### Get down with the code
 
 * [node.js docs](/api-docs/js)
