@@ -16,7 +16,7 @@ If you just want to get familiar with the API check out the interactive [playgro
 The introduction will cover the following topics:
 
 1. Authenticating with Nanobox API
-2. Fetching the account information for a given Nano address
+2. Fetching account information for a given Nano address
 3. Performing a transaction
 
 ### Clients
