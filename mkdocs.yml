@@ -7,7 +7,8 @@ nav:
   - Getting started: /api-docs
   - Clients:
       - node.js:
-        - introduction: /api-docs/js
+        - Introduction: /api-docs/js
+        - A transaction: /api-docs/js/transaction
   - Browser playground: /api-docs/nano-api
 
 theme:

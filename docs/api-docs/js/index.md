@@ -1,8 +1,9 @@
-# Node.js docs
+# Introduction
+
 Any request to the Nanobox API can be crafted manually, but we provide a fetch
 wrapper for Javascript which simplifies the setup. This is a Typescript wrapper, meaning that you'd get types for the
-requests and responses if you're working with a Typescript application. However the library will work just as well in a vanilla
-javascript project.
+requests and responses if you're working with a [Typescript application](https://www.typescriptlang.org/). However, the library will work just as well in a vanilla
+Javascript project.
 
 ## Setup
 
@@ -56,4 +57,5 @@ api.accountInfo({
 
 ### Success!
 
-Given that you successfully authenticated, the account balance should now have been printed.
+Given that you successfully authenticated, the account balance should now have been printed. You can now continue to the next
+step, [perform a transaction](/api-docs/js/transaction).
