@@ -57,5 +57,4 @@ api.accountInfo({
 
 ### Success!
 
-Given that you successfully authenticated, the account balance should now have been printed. You can now continue to the next
-step, [perform a transaction](/api-docs/js/transaction).
+Given that you successfully authenticated, the account balance should now have been printed. 

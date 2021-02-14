@@ -21,4 +21,4 @@ The introduction will cover the following topics:
 
 ### Clients
 
-* [Javascript docs](/api-docs/js)
+* [node.js docs](/api-docs/js)
