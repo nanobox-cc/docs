@@ -3,12 +3,20 @@ site_name: Nanobox docs
 nav:
   - Home: index.md
   - Getting started: api-docs
-  - Playground: api-docs/nano-api
+  - Clients:
+      - Node.js: api-docs/js
+  - Browser playground: api-docs/nano-api
 
-theme: materia
+theme: material
 
 extra_css:
   - css/extra.css
   -
 plugins:
   - render_swagger
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+        permalink: true
