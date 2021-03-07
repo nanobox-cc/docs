@@ -22,7 +22,7 @@ import { NanoClient } from "@nanobox/nano-client";
 
 const client = new NanoClient({
     url: "https://api.nanobox.cc",
-    // Supply your credientals from Nanobox
+    // Supply your credentials from Nanobox
     // credentials: { username: 'username', password: 'password' }
 })
 ```
