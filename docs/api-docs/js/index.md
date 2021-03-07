@@ -1,60 +1,48 @@
 # Introduction
 
-Any request to the Nanobox API can be crafted manually, but we provide a fetch
-wrapper for Javascript which simplifies the setup. This is a Typescript wrapper, meaning that you'd get types for the
-requests and responses if you're working with a [Typescript application](https://www.typescriptlang.org/). However, the library will work just as well in a vanilla
-Javascript project.
+Any request to the Nanobox API can be crafted manually. However, we provide a simple [nano client](https://github.com/nanobox-cc/nano-client) to help with the setup.
+Using this is fully optional and requests to Nanobox can be crafted by hand as well.
 
-## Setup
+# Setup
 
-### Dependencies
-In your node.js project, install the [nano-rpc-fetch](https://www.npmjs.com/package/nano-rpc-fetch) dependency from NPM.
-We also need [node-fetch](https://www.npmjs.com/package/node-fetch) to support the Javascript Fetch API. 
+## Dependencies
 
-    $ npm install nano-rpc-fetch node-fetch
+In your Javascript project, install the [nanobox nano client](https://github.com/nanobox-cc/nano-client) dependency. With yarn:
+    
+    $ yarn add @nanobox/nano-client
 
-### Initialize client
+Or with NPM
+
+    $ npm install @nanobox/nano-client
+
+## Initialize client
+
 ```javascript
-// Load modules
-const nanobox = require('nano-rpc-fetch');
-const fetch = require('node-fetch');
+import { NanoClient } from "@nanobox/nano-client";
 
-// Create API
-const api = new nanobox.NodeRPCsApi(
-    new nanobox.Configuration({
-        basePath: 'https://api.nanobox.cc',
-        fetchApi: fetch,
-        headers: {
-            Authorization: 'AUTH HEADER' // Auth header provided by Nanobox
-        },
-    })
-);
+const client = new NanoClient({
+    url: "https://api.nanobox.cc",
+    // Supply your credientals from Nanobox
+    // credentials: { username: 'username', password: 'password' }
+})
 ```
 
-### Retrieving info from the Nano network
+## List transactions
 
-We're gonna issue an [account_info](/api-docs/nano-api/#operations-Nanobox_API-account_info) request to get some basic information for an account:
+We're going to list the last transactions for a given account:
 
 ```javascript
 // The account address we want to fetch
 const account = 'nano_1x7biz69cem95oo7gxkrw6kzhfywq4x5dupw4z1bdzkb74dk9kpxwzjbdhhs'
 
 // Construct promise based request
-api.accountInfo({
-    accountInfoRequest: {
-        // The action we're issuing
-        action: nanobox.AccountInfoRequestActionEnum.AccountInfo,
-        // The account we want to fetch
-        account: account,
-        // Whether to include the representative in the response
-        representative: nanobox.ModelBoolean.True,
-    },
-}).then(accountInfo => {
-    // Log out response
-    console.log(`Account balance in RAW: ${accountInfo.balance}`);
-})
+client.getTransactions(account)
+    .then(transactions => {
+        console.log(transactions)
+    })
 ```
 
-### Success!
+## Success!
 
-Given that you successfully authenticated, the account balance should now have been printed. 
+Given that you successfully authenticated, the last transactions for this account should now have been listed.
+You can continue to the [the next step](/api-docs/js/transaction) where we craft our first transaction.

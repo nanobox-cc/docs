@@ -6,8 +6,9 @@ nav:
   - Home: index.md
   - Getting started: /api-docs
   - Clients:
-      - node.js:
+      - Javascript:
         - Introduction: /api-docs/js
+        - Receive nano: /api-docs/js/receive
   - Browser playground: /api-docs/nano-api
 
 theme:
