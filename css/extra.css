@@ -1,0 +1,38 @@
+.bg-primary {
+    background-color:  #4A90E2 !important;
+}
+header.md-header {
+    background-color:  #4A90E2
+}
+
+/** openapi plugin fixes */
+.information-container.wrapper {
+    display: none;
+}
+.servers {
+    margin-top: 1rem;
+}
+
+#operations-tag-Node_RPCs {
+    display: none;
+}
+#operations-tag-Node_RPCs + div {
+    display: none;
+}
+
+#operations-tag-Wallet {
+    display: none;
+}
+
+#operations-tag-Wallet + div  {
+    display: none;
+}
+
+#operations-tag-debug {
+    display: none;
+}
+
+#operations-tag-debug  + div  {
+    display: none;
+}
+
